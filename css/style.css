@@ -1,0 +1,586 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+:root {
+  --maincolor: #99e89d;
+  --paddinginline: 8rem;
+}
+
+section {
+  padding-block: 10rem;
+}
+
+/* navabar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: var(--paddinginline);
+  padding-block: 2.75rem;
+}
+
+.uflex {
+  display: flex;
+  list-style: none;
+  gap: 5rem;
+  margin-left: 8rem;
+}
+
+.uflex li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+button {
+  padding: 1.5rem 4rem;
+  font-size: 1rem;
+  background-color: #000000;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+/* Hero section */
+.bg {
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 86.9dvh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.bgoverlay {
+  width: 100%;
+  height: inherit;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.bghead h1 {
+  text-align: center;
+  color: white;
+  font-size: 10rem;
+}
+
+/* about section */
+.aboutmain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: var(--paddinginline);
+}
+
+.aboutcontent {
+  width: 50%;
+
+  h3 {
+    font-size: 3rem;
+    font-weight: 200;
+  }
+
+  h1 {
+    font-size: 8rem;
+    padding-block: 3rem;
+  }
+
+  p {
+    text-align: justify;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .btnshop {
+    margin-top: 2rem;
+    padding: 1.5rem 3rem;
+    font-weight: 200;
+  }
+}
+
+.aboutimage img {
+  width: 600px;
+}
+
+/* Sale section */
+.salesmain {
+  padding-inline: var(--paddinginline);
+}
+
+.cardsheading {
+  font-size: 5rem;
+  margin-bottom: 4rem;
+}
+
+.card img {
+  width: 401px;
+  height: 530px;
+  margin-bottom: 10px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.card .shead {
+  margin-bottom: 10px;
+}
+
+/* product section */
+.productmain {
+  padding-inline: var(--paddinginline);
+}
+
+.productheading {
+  font-size: 5rem;
+  margin-bottom: 4rem;
+}
+
+.Cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 25px;
+}
+.Cardss h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.Cardss img {
+  width: 350px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* fashion ad section */
+.fashionmain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  gap: 8rem;
+  justify-content: space-between;
+}
+.fashioncontent {
+  h3 {
+    font-size: 2.7rem;
+    font-weight: 400;
+  }
+  h1 {
+    font-size: 4rem;
+    line-height: 6.5rem;
+    margin-block: 2rem;
+  }
+  button {
+    padding: 1.8rem 4rem;
+    font-size: 1.7rem;
+  }
+}
+.fashionimg {
+  display: flex;
+}
+.fashionmain img {
+  width: 350px;
+}
+.fashionmain2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline: 3rem;
+  justify-content: space-between;
+  padding-top: 5rem;
+  background-color: rgb(209, 209, 209);
+}
+.fashionmain2 .fashionimg2{
+  place-content: end;
+  margin-bottom: 5rem;
+}
+
+/* reviews section */
+.reviewsection {
+  padding-inline: var(--paddinginline);
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .reviewp {
+    font-size: 1.4rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  row-gap: 5rem;
+}
+
+.bxmain {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.8rem;
+  align-items: center;
+
+  span {
+    color: #f4cb7e;
+    font-size: 2.2rem;
+    transition: 0.6s ease-in-out;
+  }
+}
+.bxmain span:hover {
+  transform: scale(1.2);
+  color: #f6be58;
+  transition: 0.6s linear;
+  cursor: pointer;
+}
+
+.box {
+  padding: 2rem 3rem;
+  width: 420px;
+  height: 200px;
+  font-size: 1.6rem;
+  background: #e1e0de;
+  border-radius: 5px;
+
+  p {
+    font-size: 1.4rem;
+    text-align: justify;
+  }
+}
+
+/* subscribe section */
+.submain {
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline: var(--paddinginline);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subcontent h1 {
+  font-size: 7rem;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+}
+.formsub1 {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    display: flex;
+    gap: 5px;
+    font-size: 1.2rem;
+  }
+}
+
+#email {
+  width: 380px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  padding: 1rem 2rem;
+  margin-bottom: 1.6rem;
+}
+
+.formsub2 .btnsub {
+  background: #ececec;
+  color: black;
+  border-radius: 1px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* footer */
+.foot {
+  padding-bottom: 0;
+}
+.footermain {
+  width: 100%;
+  /* height: 400px; */
+  background: #000;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding-inline: var(--paddinginline);
+  padding-block: 4rem;
+  gap: 5rem;
+}
+
+.carecontent {
+  width: 40%;
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 2.8rem;
+  }
+  p {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    text-align: justify;
+    width: 100%;
+  }
+}
+
+.infocontent1 {
+  text-align: center;
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 2.7rem;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+
+    li {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.infocontent2 {
+  text-align: center;
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 2.7rem;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+
+    li {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+/* responisve */
+/* tablet */
+
+@media screen and (max-width: 900px) {
+  section {
+    padding-block: 5rem;
+  }
+  .uflex {
+    display: none;
+  }
+  .navbar,
+  .aboutmain,
+  .salesmain,
+  .productmain,
+  .fashionmain2,
+  .reviewsection,
+  .submain,
+  .footermain {
+    padding-inline: 4rem;
+  }
+  .aboutcontent {
+    width: 100%;
+    margin-bottom: 10px;
+    h3 {
+      font-size: 2rem;
+    }
+    h1 {
+      font-size: 6rem;
+      padding-block: 0.5rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  .aboutimage,
+  .infocontent1,
+  .infocontent2 {
+    margin: 0 auto;
+  }
+  .aboutimage img {
+    width: 320px;
+  }
+
+  .card {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+
+    img {
+      height: 340px;
+      width: 250px;
+    }
+  }
+
+  .Cardss img {
+    width: 300px;
+    height: auto;
+  }
+  .fashionmain {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+  }
+  .fashionmain2 {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+  }
+
+  .box {
+    margin: 0 auto;
+    width: 360px;
+    height: 180px;
+  }
+
+  .subcontent h1 {
+    font-size: 4rem;
+  }
+  .form {
+    width: 50%;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .foot {
+    p,
+    ul li {
+      font-size: 1.5rem;
+    }
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+  .carecontent {
+    width: 100%;
+  }
+}
+
+/* Mobile  */
+@media screen and (max-width: 500px) {
+  section {
+    padding-block: 4rem;
+  }
+  .navbar,
+  .aboutmain,
+  .salesmain,
+  .productmain,
+  .fashionmain2,
+  .reviewsection,
+  .submain,
+  .footermain {
+    padding-inline: 2rem;
+  }
+  .bghead h1 {
+    font-size: 7rem;
+  }
+  .aboutcontent {
+    h1 {
+      font-size: 4rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  .aboutimage img {
+    width: 300px;
+  }
+  .card img {
+    height: 270px;
+    width: 210px;
+  }
+  .Cardss {
+    margin-bottom: 10px;
+  }
+  .Cardss img {
+    width: 220px;
+    height: 150px;
+  }
+  .fashionmain img,
+  .fashionmain2 img {
+    width: 250px;
+  }
+  .fashionmain {
+    gap: 5rem;
+    h1 {
+      line-height: 5rem;
+    }
+  }
+  .fashioncontent {
+    text-align: center;
+    h1 {
+      font-size: 3rem;
+    }
+    h3 {
+      font-size: 2.2rem;
+    }
+  }
+  .reviewsection h1 {
+    font-size: 3rem;
+  }
+
+  .submain {
+    justify-content: center;
+    gap: 2rem;
+  }
+  .formsub2 .btnsub {
+    margin-top: 1.5rem;
+  }
+  .box {
+    width: 320px;
+    height: 160px;
+  }
+  body p {
+    text-align: justify;
+  }
+  .btnshop {
+    margin-bottom: 15px;
+  }
+  .fashionmain2 .fashionimg2{
+    margin-bottom: 0;
+  }
+}
